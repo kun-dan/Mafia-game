@@ -17,8 +17,7 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.midnightmafia.app",
-      "edgeToEdgeEnabled": true
+      "package": "com.midnightmafia.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
