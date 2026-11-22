@@ -23,6 +23,12 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "backgroundColor": "#0c0a12"
+    "backgroundColor": "#0c0a12",
+    "owner": "asridhar2006s-team",
+    "extra": {
+      "eas": {
+        "projectId": "a737eaec-2d09-42aa-8573-13eaef3f31b0"
+      }
+    }
   }
 }

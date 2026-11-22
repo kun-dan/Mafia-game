@@ -23,11 +23,11 @@ npx expo install --fix      # fix incompatible package versions
 
 Run lint and typecheck before declaring any task done.
 
-## Navigation & Routing
+## Project layout
 
-- Use **Expo Router** for all navigation. Routes live in `src/app/` — every file there is a screen, `_layout.tsx` files define navigators. Keep non-route code (components, hooks, utils) outside `src/app/`.
-- Import `Link`, `router`, and `useLocalSearchParams` from `expo-router`.
-- Docs: https://docs.expo.dev/router/introduction.md
+- Plain JavaScript (no TypeScript). Navigation is a small stack in `src/store.js` (`actions.navigate/goBack/replace/resetTo`); screens live in `src/screens/` and are registered in `App.js`.
+- `src/logic.js` holds pure game rules (dealing, night script, eliminations, win checks); `src/roles.js` the built-in roles; `src/ui.js` shared components.
+- `node scripts/check.js` syntax-checks every file; `npx expo export --platform android` checks the full bundle.
 
 ## Building with EAS
 
